@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#040812"/>
+  <circle cx="960" cy="140" r="320" fill="#00D2FF" fill-opacity="0.12"/>
+  <circle cx="240" cy="520" r="280" fill="#2563EB" fill-opacity="0.14"/>
+  <g stroke="#1E293B" stroke-width="1">
+    <line x1="0" y1="120" x2="1200" y2="120"/><line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  <rect x="88" y="96" width="84" height="84" rx="20" fill="#0A0F1D" stroke="#00D2FF" stroke-width="2.5"/>
+  <path d="M108 118H126C138.15 118 148 127.85 148 140C148 152.15 138.15 162 126 162H108V118Z" stroke="#38BDF8" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M120 130L138 148M138 130L120 148" stroke="#00D2FF" stroke-width="4" stroke-linecap="round"/>
+  <text x="196" y="132" fill="#38BDF8" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">DEVNEXUS TECH</text>
+  <text x="196" y="166" fill="#94A3B8" font-family="Arial, sans-serif" font-size="19">Engineering Digital Excellence.</text>
+  <text x="88" y="285" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="64" font-weight="800">Engineering Tomorrow's</text>
+  <text x="88" y="362" fill="#00D2FF" font-family="Arial, sans-serif" font-size="64" font-weight="800">Digital World.</text>
+  <text x="88" y="438" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="26">Intelligent Software • Scalable Web Platforms • AI Automation</text>
+  <rect x="88" y="492" width="350" height="52" rx="26" fill="#0A1328" stroke="#1E3A5F"/>
+  <text x="116" y="525" fill="#38BDF8" font-family="monospace" font-size="20">Pakistan • UK • USA • CA • AU</text>
+</svg>

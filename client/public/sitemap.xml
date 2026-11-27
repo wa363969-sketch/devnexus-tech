@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://devnexustech.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://devnexustech.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devnexustech.com/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://devnexustech.com/portfolio</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://devnexustech.com/technologies</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devnexustech.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devnexustech.com/start-project</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://devnexustech.com/legal/privacy</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://devnexustech.com/legal/terms</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>
