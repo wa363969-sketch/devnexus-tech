@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-navy-950: #040812;
+  --color-navy-900: #080f20;
+  --color-navy-850: #0c162e;
+  --color-navy-800: #111f3f;
+  --color-navy-700: #1a2d57;
+  --color-navy-600: #243c70;
+
+  --color-electric-300: #7dd3fc;
+  --color-electric-400: #38bdf8;
+  --color-electric-500: #00d2ff;
+  --color-electric-600: #0284c7;
+  --color-electric-neon: #22d3ee;
+
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --shadow-glow-sm: 0 0 18px rgba(0, 210, 255, 0.22);
+  --shadow-glow-md: 0 0 34px rgba(0, 210, 255, 0.30);
+  --shadow-glow-lg: 0 0 56px rgba(0, 210, 255, 0.40);
+}
+
+:root {
+  --surface-page: #f8fafc;
+  --surface-elevated: #ffffff;
+  --surface-subtle: #f1f5f9;
+  --border-subtle: rgba(15, 23, 42, 0.09);
+  --text-primary: #0a1020;
+  --text-secondary: #475569;
+  color-scheme: light;
+}
+
+html.dark {
+  --surface-page: #040812;
+  --surface-elevated: #080f20;
+  --surface-subtle: #0c162e;
+  --border-subtle: rgba(148, 163, 184, 0.14);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--surface-page);
+  color: var(--text-primary);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Architectural Surfaces */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(15, 23, 42, 0.09);
+}
+
+html.dark .glass-panel {
+  background: rgba(8, 15, 32, 0.76);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.architectural-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  box-shadow: 0 8px 28px -12px rgba(15, 23, 42, 0.08);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+html.dark .architectural-card {
+  background: linear-gradient(155deg, rgba(12, 22, 46, 0.85) 0%, rgba(6, 11, 24, 0.92) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.14);
+  box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.65);
+}
+
+.architectural-card:hover {
+  border-color: rgba(2, 132, 199, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px -18px rgba(0, 210, 255, 0.20);
+}
+
+.text-gradient {
+  background: linear-gradient(125deg, #0284c7 0%, #0ea5e9 45%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .text-gradient {
+  background: linear-gradient(125deg, #ffffff 15%, #38bdf8 58%, #00d2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.architectural-grid {
+  background-size: 48px 48px;
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+}
+
+html.dark .architectural-grid {
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.045) 1px, transparent 1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
