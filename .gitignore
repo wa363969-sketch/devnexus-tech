@@ -1,0 +1,85 @@
+# ============================================================
+# DEVNEXUS TECH — .gitignore
+# ============================================================
+
+# --- Secrets (NEVER commit) ---
+.env
+.env.local
+.env.production
+.env.development
+*.env
+server/.env
+client/.env
+client/.env.local
+client/.env.production
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+server/venv/
+server/mingit/
+venv/
+ENV/
+.venv/
+*.egg-info/
+dist-info/
+*.dist-info/
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# --- SQLite (local dev only — Vercel uses ephemeral FS) ---
+*.db
+*.sqlite
+*.sqlite3
+server/inquiries.db
+
+# --- Node / Frontend ---
+node_modules/
+client/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.pnp
+.pnp.js
+
+# --- Vite / Build output (Vercel rebuilds from source) ---
+dist/
+client/dist/
+build/
+.vite/
+
+# --- IDE & Editor ---
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.user
+*.iml
+*.iws
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+ehthumbs.db
+
+# --- Vercel ---
+.vercel
+
+# --- Misc ---
+*.log
+*.tmp
+*.temp
+scratch/
+projects/__temp/

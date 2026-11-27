@@ -1,0 +1,29 @@
+# Local Python & Git toolchains (never upload to Vercel)
+server/venv/
+server/mingit/
+server/inquiries.db
+server/.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local Node modules & build caches (Vercel runs fresh install & build)
+node_modules/
+client/node_modules/
+dist/
+client/dist/
+
+# Standalone reference sub-projects & unrelated workspace files
+projects/
+scratch/
+tests/
+docs/
+*.docx
+*.ipynb
+*.bat
+test_*.py
+.env
+.env.*
+!.env.example
+!client/.env.example
+!server/.env.example
